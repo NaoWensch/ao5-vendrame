@@ -1,0 +1,45 @@
+/* geral */
+.admin_titulo .acf-editor-wrap iframe {
+	height: 56px !important;
+	min-height: 56px;
+}
+
+.admin_80 .acf-editor-wrap iframe {
+	height: 80px !important;
+	min-height: 80px;
+}
+
+.admin_100 .acf-editor-wrap iframe {
+	height: 100px !important;
+	min-height: 100px;
+}
+
+.admin_150 .acf-editor-wrap iframe {
+	height: 150px !important;
+	min-height: 150px;
+}
+
+.admin_200 .acf-editor-wrap iframe {
+	height: 200px !important;
+	min-height: 200px;
+}
+
+.admin_250 .acf-editor-wrap iframe {
+	height: 250px !important;
+	min-height: 250px;
+}
+
+.admin_350 .acf-editor-wrap iframe {
+	height: 350px !important;
+	min-height: 350px;
+}
+
+.admin_400 .acf-editor-wrap iframe {
+	height: 400px !important;
+	min-height: 400px;
+}
+
+.admin_450 .acf-editor-wrap iframe {
+	height: 450px !important;
+	min-height: 450px;
+}
