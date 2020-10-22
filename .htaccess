@@ -5,11 +5,11 @@
 # Quaisquer alterações nas diretivas entre esses marcadores serão sobrescritas.
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /ao5/vendrame/
+RewriteBase /ao5/ao5-vendrame/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /ao5/vendrame/index.php [L]
+RewriteRule . /ao5/ao5-vendrame/index.php [L]
 </IfModule>
 
 # END WordPress
