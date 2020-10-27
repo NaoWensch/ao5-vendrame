@@ -3,10 +3,10 @@
 	get_header();
 ?>
 
-<div class="popup">
+<!-- <div class="popup">
 	<button class="close-popup">Fechar</button>
 	<img src="<?php bloginfo("template_directory")?>/assets/img/pop-up.jpg" alt="Calçados flex clean">
-</div>
+</div> -->
 
 <section class="content_wrapper">
 	<!-- home_slides -->
@@ -24,6 +24,10 @@
 	<!-- home_mais_vendidos -->
 	<?php include (TEMPLATEPATH . '/assets/includes/home_mais_vendidos.php'); ?>
 	<!-- fim home_mais_vendidos -->
+
+	<!-- home_covid -->
+	<?php include (TEMPLATEPATH . '/assets/includes/home_covid.php'); ?>
+	<!-- fim home_covid -->
 
 	<!-- home_marcas -->
 	<?php include (TEMPLATEPATH . '/assets/includes/home_marcas.php'); ?>

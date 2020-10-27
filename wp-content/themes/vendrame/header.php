@@ -62,7 +62,7 @@ if(!isset($_SESSION["referrer"])){
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 <![endif]-->
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<link href="https://fonts.googleapis.com/css?family=Play:400,700|Roboto:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url'); ?>/assets/css/animate.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url'); ?>/assets/css/slick.css" />
@@ -158,24 +158,19 @@ if(!isset($_SESSION["referrer"])){
 
 		<!-- header_topo -->
 		<div class="header_topo">
-			<div class="header_form">
-				<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-					<span class="pre_busca"><i class="fas fa-search"></i> Busca:</span>
-					<input class="field_busca" type="text" name="s" id="s" placeholder="Procurar produto" />
-					<button class="enviar_busca" type="submit" id="searchsubmit">Ok <i class="fas fa-angle-double-right"></i></button>
-				</form>
-			</div>
 
 			<div class="header_contato">
-				<!-- <a class="facebook" href="https://www.facebook.com/Tuiuti/" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
+				<a class="facebook" href="https://www.facebook.com/Tuiuti/" target="_blank"><i class="fab fa-facebook-f"></i></a>
 				<a class="facebook" href="https://www.instagram.com/p/B40c4TnHoVt/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a class="facebook" href="https://www.instagram.com/p/B40c4TnHoVt/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a class="facebook -youtube" href="https://www.instagram.com/p/B40c4TnHoVt/" target="_blank"><i class="fab fa-youtube"></i></a>
 
 				<span class="header_phone">
-					<i class="fas fa-phone"></i> <span>[11]</span> 2090-2988
+					<i class="fas fa-phone"></i> 11 2090-2988
 				</span>
 				<span class="header_phone header_whats">
 					<a href="https://web.whatsapp.com/send?phone=5511947123303&text=Envie uma mensagem"  class="ao5-whatsapp-event">
-						<i class="fab fa-whatsapp"></i> <span>[11]</span> 94712-3303
+						<i class="fab fa-whatsapp"></i> Whatsapp
 					</a>
 				</span>
 			</div>

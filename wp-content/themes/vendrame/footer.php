@@ -7,16 +7,57 @@
 			
 			<div class="footer_main">
 				<div class="footer_logo">
-					<a href="<?php echo home_url( '/' ); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/img/logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
-					<span>Equipamentos de Segurança</span>
+					<a href="<?php echo home_url( '/' ); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/img/logo-footer.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
 				</div>
 
 				<div class="footer_menu_wrapper">
 					<nav class="footer_menu">
 						<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 					</nav>
-
-					<nav class="footer_produtos">
+					<nav class="footer_servicos">
+						<strong>Serviços</strong>
+						<ul>
+							<li><a href="#">Engenharia e Segurança do Trabalho</a></li>
+							<li><a href="#">Assistência Técnica em Perícias</a></li>
+							<li><a href="#">Saúde Ocupacional</a></li>
+							<li><a href="#">Gestão Ambiental</a></li>
+						</ul>
+					</nav>
+					<nav class="footer_servicos">
+						<strong>cursos</strong>
+						<ul>
+							<li><a href="#">Cursos Presenciais</a></li>
+							<li><a href="#">Cursos In Company</a></li>
+							<li><a href="#">EAD - Cursos a Distância</a></li>
+						</ul>
+					</nav>
+					<div class="footer_endereco">
+						<div class="endereco">
+							<strong>SEDE</strong>
+							<div class="">
+								<a href="tel:+551122624733"><i class="fas fa-phone"></i> (11) 2262-4733</a>
+								<address><i class="fas fa-map-marker-alt"></i> Av. Tucuruvi, 563 – 1º andar Tucuruvi</address>
+							</div>
+						</div>
+						<div class="endereco">
+							<strong>CLÍNICA</strong>
+							<div class="">
+								<a href="tel:+551122624733"><i class="fas fa-phone"></i> (11) 2262-4733</a>
+								<address><i class="fas fa-map-marker-alt"></i> Av. Tucuruvi, 557 – 1º andar Tucuruvi</address>
+							</div>
+						</div>
+						<div class="endereco">
+							<strong>CAXIAS<br> DO SUL</strong>
+							<div class="">
+								<a href="tel:+551122624733"><i class="fas fa-phone"></i> (11) 2262-4733</a>
+								<address><i class="fas fa-map-marker-alt"></i> 
+									Av. Ítalo Victor Bersani, 1134
+									(complexo da CIC) - Caxias do Sul / RS
+								</address>
+							</div>
+						</div>
+					</div>
+					<!-- <nav class="footer_produtos">
 						<ul>
 							<?php
 								$args = array(
@@ -36,41 +77,24 @@
 
 							<?php endforeach; ?>
 						</ul>
-					</nav>
+					</nav> -->
+				</div>
+				<div class="footer_bottom">
+					<div class="footer_contato">
+						<a href="tel:+" class="contato"><i class="fas fa-phone"></i> Ligue agora</a>
+						<div class=" -whats">
+							<a href="https://web.whatsapp.com/send?phone=551194712-3303&text=Envie uma mensagem" title="Whatsapp" class="contato ao5-whatsapp-event">
+								<i class="fab fa-whatsapp"></i><span> Whatsapp</span>
+							</a>
+						</div>
+						<a href="mailto:contato@vendrame.com.br" class="contato -mail"><i class="fas fa-envelope"></i> contato@vendrame.com.br</a>
+					</div>
+					<div class="footer_premios">
+						<span>Prêmios e Certificações:</span>
+						<img src="<?php bloginfo('template_directory'); ?>/assets/img/top-of-mind.png" alt="">
+					</div>
 				</div>
 			</div>
-
-			<div class="footer_contato">
-				<div class="footer_contato_left">
-					<p class="footer_telefone">
-						<span>
-							<i class="fas fa-phone"></i>
-							<span>(11) 2942-9988 / 2090-2988</span>
-						</span>
-					</p>
-					<p class="footer_telefone -whats">
-						<a href="https://web.whatsapp.com/send?phone=551194712-3303&text=Envie uma mensagem" title="Whatsapp" class="ao5-whatsapp-event">
-							<i class="fab fa-whatsapp"></i><span>(11) 94712-3303</span>
-						</a>
-					</p>
-
-					<p class="footer_endereco">
-						<i class="fas fa-map-marker-alt"></i>
-						<span>Rua Maria Prestes Maia, 477 Vila Guilherme,<br> São Paulo - SP CEP: 02047-000</span>
-					</p>
-
-					<p class="footer_horario">
-						<i class="fas fa-clock"></i>
-						<span>Horário de funcionamento: Seg a Sex das 8h às 12h | 13h às 17h45</span>
-					</p>
-				</div>
-
-				<div class="footer_contato_right">
-					<p>EMPRESA CERTIFICADA</p>
-					<img src="<?php bloginfo('template_directory'); ?>/assets/img/footer-selos.png" alt="Selos">
-				</div>
-			</div>
-
 		</section>
 	</section>
 	<!-- footer top -->
