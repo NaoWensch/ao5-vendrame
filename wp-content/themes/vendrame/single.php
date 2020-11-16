@@ -110,9 +110,20 @@
 
 	</section>
 	<!-- fim content -->
-
+	
+	<?php
+	
+	?>
 	<!-- mais_artigos_relacionados -->
-	<?php include (TEMPLATEPATH . '/assets/includes/mais_artigos_relacionados.php'); ?>
+	<?php
+		foreach((get_the_category()) as $category) {
+			if ($category->cat_name = 'Mídia') {
+				include (TEMPLATEPATH . '/assets/includes/veja_mais.php');
+			}else {
+				include (TEMPLATEPATH . '/assets/includes/mais_artigos_relacionados.php');
+			}
+		}
+	?>
 	<!-- mais_artigos_relacionados -->
 	
 </section>

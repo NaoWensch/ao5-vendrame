@@ -137,4 +137,20 @@ $(document).ready(function(){
 		arrows: false,
 	});
 
+	
+	// DEPOIMENTOS PAGINA CLIENTES
+	$('.clientes-depoimentos-list').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		cssEase: "ease",
+		infinite: true,
+		autoplay: false,
+		adaptiveHeight: true,
+		speed: 500,
+		dots: false,
+		arrows: true,
+		prevArrow: '.home_marcas_prev',
+		nextArrow: '.home_marcas_next',
+	});
+
 });

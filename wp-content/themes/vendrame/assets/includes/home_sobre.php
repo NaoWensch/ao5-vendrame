@@ -2,7 +2,7 @@
 	<section class="content">
 
 		<div class="home_sobre_left">
-			<span class="title-desc">Institucional</span>
+			<span class="title-desc"><?php the_field('descricao_topo') ?></span>
 			<h2 class="title"><?php the_field( 'tit_sobre' ); ?></h2>
 
 			<?php the_field( 'txt_sobre' ); ?>

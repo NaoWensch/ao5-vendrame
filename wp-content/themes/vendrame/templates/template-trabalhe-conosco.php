@@ -15,15 +15,14 @@
 		<?php include (TEMPLATEPATH . '/assets/includes/breadcrumbs.php'); ?>
 		<!-- breadcrumbs -->
 
-		<h1 class="title full"><?php the_title(); ?></h1>
-
-		<?php the_content(); ?>
-
 		<!-- fornecedores wrapper -->
 		<div class="contato_wrapper">
 
 			<!-- contato left -->
 			<div class="contato_left">
+				<h1 class="title full"><?php the_title(); ?></h1>
+
+				<?php the_content(); ?>
 				<p>Preencha o formulário abaixo e nos envie seu currículo.</p>
 
 				<form action="<?php bloginfo('home'); ?>/resposta-trabalhe-conosco" class="content_form form-trabalhe" enctype="multipart/form-data" method="post">
@@ -80,6 +79,9 @@
 
 			<!-- contato right -->
 			<div class="contato_right">
+				<img src="<?php bloginfo('template_directory'); ?>/assets/img/trabalheconosco.jpg" alt="">
+			</div>
+			<!-- <div class="contato_right">
 				<div class="contato_right_p">
 					<span><i class="fas fa-clock"></i></span>
 					<p>Horário de funcionamento:<br>Seg à Sex das 8h às 12h - 13h às 17h45</p>
@@ -89,7 +91,8 @@
 					<span><i class="fas fa-map-marker-alt"></i></span>
 					<p>Rua Maria Prestes Maia, 477 - Vila Guilherme<br>São Paulo/SP - Cep 02047-000</p>
 				</div>
-			</div>
+			</div> -->
+			
 			<!-- contato_right -->
 
 		</div>
@@ -99,7 +102,7 @@
 	<!-- fim content -->
 
 	<!-- contato baixo -->
-	<?php include (TEMPLATEPATH . '/assets/includes/contato_baixo.php'); ?>
+	<?php// include (TEMPLATEPATH . '/assets/includes/contato_baixo.php'); ?>
 	<!-- contato baixo -->
 	
 </section>

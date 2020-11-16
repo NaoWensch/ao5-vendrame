@@ -6,7 +6,7 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 <!-- content wrapper -->
-<section class="content_wrapper">
+<section class="content_wrapper -page-empresa">
 
 	<!-- content -->
 	<section class="content content_institucionais">
@@ -15,34 +15,26 @@
 		<?php include (TEMPLATEPATH . '/assets/includes/breadcrumbs.php'); ?>
 		<!-- breadcrumbs -->
 
-		<nav class="menu_institucional">
-			<?php wp_nav_menu( array( 'theme_location' => 'sobre-menu' ) ); ?>
-		</nav>
+	<!-- empresa_sobre -->
+		<?php include (TEMPLATEPATH . '/assets/includes/home_sobre.php'); ?>
+	<!-- fim empresa_sobre -->
 
 	</section>
 	<!-- fim content -->
 
 	<!-- quem somos -->
-	<section class="empresa_topo_wrapper">
-		<section class="content">
-			
-			<div class="quem_somos_in">
-				<?php the_content(); ?>
-			</div>
-
-		</section>
-
+	<!-- <section class="empresa_topo_wrapper">
 		<div class="empresa_topo_bg" style="background: url('<?php the_field( 'bg_sobre_topo' ); ?>') no-repeat left center / cover;">
 			<span>
 				<img src="<?php the_field( 'icon_sobre_img' ); ?>" alt="Ícone">
 				<h3><?php the_field('tit_sobre_icon'); ?></h3>
 			</span>
 		</div>
-	</section>
+	</section> -->
 	<!-- quem somos -->
 
 	<!-- quem somos -->
-	<section class="empresa_comerciais_wrapper">
+	<!-- <section class="empresa_comerciais_wrapper">
 		<section class="content">
 			
 			<h1 class="title full center"><?php the_field( 'tit_comerciais' ); ?></h1>
@@ -54,11 +46,11 @@
 			</div>
 
 		</section>
-	</section>
+	</section> -->
 	<!-- quem somos -->
 
 	<!-- quem somos -->
-	<section class="empresa_responsabilidade_wrapper">
+	<!-- <section class="empresa_responsabilidade_wrapper">
 		<section class="content">
 			
 			<div class="responsabilidade_social_in">
@@ -70,6 +62,42 @@
 		</section>
 
 		<div class="empresa_responsabilidade_bg" style="background: url('<?php the_field( 'bg_responsabilidade' ); ?>') no-repeat left center / cover;"></div>
+	</section> -->
+	<!-- quem somos -->
+
+	<!-- quem somos -->
+		<section class="empresa-identidade">
+			<div class="content">
+				<div class="empresa-identidade-list">
+					<?php while ( have_rows('listagem_identidade') ) : the_row(); ?>
+						<div class="empresa-identidade-item">
+							<strong class="title"><i class="fas fa-chevron-right"></i> <?php the_sub_field('titulo') ?></strong>
+							<p class="desc"><?php the_sub_field('descricao') ?></p>
+						</div>
+					<?php endwhile; ?>
+				</div>
+			</div>
+		</section>
+	<!-- quem somos -->
+
+	
+	<!-- quem somos -->
+	<section class="empresa-numbers">
+		<div class="content">
+			<div class="empresa-numbers-list">
+				<?php while ( have_rows('listagem_numeros') ) : the_row(); ?>
+					<div class="empresa-numbers-item">
+						<div class="empresa-numbers-img">
+							<img src="<?php the_sub_field('imagem'); ?>" alt="<?php the_sub_field('titulo'); ?>">
+						</div>
+						<div class="empresa-numbers-content">
+							<strong class="title"><?php the_sub_field('titulo') ?></strong>
+							<p class="desc"><?php the_sub_field('descricao') ?></p>
+						</div>
+					</div>
+				<?php endwhile; ?>
+			</div>
+		</div>
 	</section>
 	<!-- quem somos -->
 

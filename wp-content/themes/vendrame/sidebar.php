@@ -78,9 +78,9 @@
 
 	<!-- produtos mais vendidos -->
 	<div class="blog_mais_vendidos">
-		<div class="blog_mais_vendidos_tit">
+		<!-- <div class="blog_mais_vendidos_tit">
 			<h3>CONFIRA OS PRODUTOS <span><i>+</i> VENDIDOS</span></h3>
-		</div>
+		</div> -->
 
 		<div class="blog_mais_vendidos_slider">
 			<?php
@@ -90,6 +90,7 @@
 			?>	
 				
 				<div class="blog_mais_vendidos_box">
+					<h3><?php the_title(); ?></h3>
 					<div class="blog_mais_img">
 						<?php 
 						$images = get_field('galeria_produto');
@@ -124,8 +125,6 @@
 						?>
 					</div>
 
-					<h3><?php the_title(); ?></h3>
-
 					<a class="blog_mais_vendidos_link" href="<?php the_permalink(); ?>"></a>
 				</div>
 				
@@ -136,7 +135,7 @@
 
 	<!-- produtos categorias -->
 	<div class="blog_produtos">
-		<h3>JÁ CONHECE TODOS OS NOSSOS PRODUTOS?</h3>
+		<h3>CONHECE NOSSAS ÁREAS DE ATUAÇÃO?</h3>
 
 		<p>Confira agora!</p>
 
@@ -155,7 +154,7 @@
 				foreach( $taxonomies as $taxonomy ) : 
 			?>
 
-				<li><a href="<?php echo get_category_link($taxonomy); ?>"><span style="background: url('<?php the_field('icon_cat_p', $taxonomy->taxonomy . '_' . $taxonomy->term_id); ?>') no-repeat center center / contain #e45304;"></span><?php echo $taxonomy->cat_name; ?></a></li>
+				<li><a href="<?php echo get_category_link($taxonomy); ?>"><span><i class="far fa-arrow-alt-circle-right"></i></span><?php echo $taxonomy->cat_name; ?></a></li>
 
 			<?php endforeach; ?>
 		</ul>

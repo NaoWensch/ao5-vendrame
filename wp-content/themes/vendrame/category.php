@@ -57,7 +57,13 @@
 	<!-- fim content -->
 
 	<!-- artigos mais lidos -->
-	<?php include (TEMPLATEPATH . '/assets/includes/artigos_mais_lidos.php'); ?>
+	<?php 
+		if ($current_category == "Mídia") {
+			include (TEMPLATEPATH . '/assets/includes/veja_mais.php');
+		} else {
+			include (TEMPLATEPATH . '/assets/includes/artigos_mais_lidos.php');
+		}
+	?>
 	<!-- artigos mais lidos -->
 
 </section>
